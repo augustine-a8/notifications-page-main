@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="./script.js" defer></script>
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-neutral-gb-50">
+
+  <main class="bg-neutral-white">
+    <div class="notifications-header flex">
+      <h3>Notifictions <span class="unread-msg-count bg-primary-blue"></span></h3>
+      <small class="text-clr-primary-blue header-btn">Mark all as read</small>
+    </div>
+    
+    <div class="notifications-list flex">
+      <div class="notification-box unread-notification flex">
+        <div class="avatar">
+          <img src="./assets/images/avatar-mark-webber.webp" alt="mark webber avatar">
+        </div>
+        <div class="notification flex">
+          <p>
+            <span class="text-highlight text-clr-black">
+              Mark Webber
+            </span> reacted to your recent post 
+            <span class="text-highlight text-clr-neutral-gb-500">My first tournament today!</span> 
+            <span class="unread-msg-tag"></span>
+          </p>
+          <small class="text-clr-neutral-gb-400">1m ago</small>
+        </div>
+      </div>
+
+      <div class="notification-box unread-notification flex">
+        <div class="avatar">
+          <img src="./assets/images/avatar-angela-gray.webp" alt="mark webber avatar">
+        </div>
+        <div class="notification flex">
+          <p>
+            <span class="text-highlight text-clr-black">
+              Angela Gray
+            </span> followed you
+            <span class="text-highlight text-clr-neutral-gb-500"></span> 
+            <span class="unread-msg-tag"></span>
+          </p>
+          <small class="text-clr-neutral-gb-400">5m ago</small>
+        </div>
+      </div>
+
+      <div class="notification-box unread-notification flex">
+        <div class="avatar">
+          <img src="./assets/images/avatar-jacob-thompson.webp" alt="mark webber avatar">
+        </div>
+        <div class="notification flex">
+          <p>
+            <span class="text-highlight text-clr-black">
+              Jacob Thompson
+            </span> has joined your group
+            <span class="text-highlight text-clr-primary-blue">Chess Club</span> 
+            <span class="unread-msg-tag"></span>
+          </p>
+          <small class="text-clr-neutral-gb-400">1day ago</small>
+        </div>
+      </div>
+
+      <div class="notification-box flex">
+        <div class="avatar">
+          <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="mark webber avatar">
+        </div>
+        <div class="notification flex">
+          <p>
+            <span class="text-highlight text-clr-black">
+              Rizky Hasanuddin 
+            </span> sent you a private message
+            <span class="text-highlight text-clr-neutral-gb-500"></span> 
+            <span class="unread-msg-tag"></span>
+          </p>
+          <small class="text-clr-neutral-gb-400">5 days ago</small>
+          <div class="msg-open">
+            <p class="text-clr-neutral-gb-500">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="notification-box flex">
+        <div class="avatar">
+          <img src="./assets/images/avatar-kimberly-smith.webp" alt="mark webber avatar">
+        </div>
+        <div class="notification flex">
+          <p>
+            <span class="text-highlight text-clr-black">
+              Kimberly Smith
+            </span> commented on your picture
+            <span class="text-highlight text-clr-neutral-gb-500"></span> 
+            <span class="unread-msg-tag"></span>
+          </p>
+          <small class="text-clr-neutral-gb-400">1 week ago</small>
+        </div>
+        <div class="avatar">
+          <img src="./assets/images/image-chess.webp" alt="mark webber avatar">
+        </div>
+      </div>
+
+      <div class="notification-box flex">
+        <div class="avatar">
+          <img src="./assets/images/avatar-nathan-peterson.webp" alt="mark webber avatar">
+        </div>
+        <div class="notification flex">
+          <p>
+            <span class="text-highlight text-clr-black">
+              Nathan Peterson 
+            </span> reacted to your recent post
+            <span class="text-highlight text-clr-neutral-gb-500">5 end-game strategies to increase your win rate</span> 
+            <span class="unread-msg-tag"></span>
+          </p>
+          <small class="text-clr-neutral-gb-400">2 weeks ago</small>
+        </div>
+      </div>
+
+      <div class="notification-box flex">
+        <div class="avatar">
+          <img src="./assets/images/avatar-anna-kim.webp" alt="mark webber avatar">
+        </div>
+        <div class="notification flex">
+          <p>
+            <span class="text-highlight text-clr-black">
+              Anna Kim
+            </span> left the group
+            <span class="text-highlight text-clr-primary-blue">Chess Club</span> 
+            <span class="unread-msg-tag"></span>
+          </p>
+          <small class="text-clr-neutral-gb-400">2weeks ago</small>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
